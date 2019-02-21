@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Buscaminas"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/titulo"
+        android:textColor="#000000"
+        />
+
+  <RelativeLayout
+      android:id="@+id/pantalla1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center"
+      android:layout_below="@id/titulo">
+
+      <Button
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:id="@+id/btn1"/>
+
+      <Button
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:id="@+id/btn2"
+          android:layout_toRightOf="@id/btn1"/>
+
+      <Button
+          android:layout_width="100dp"
+          android:layout_height="100dp"
+          android:id="@+id/btn3"
+          android:layout_toRightOf="@id/btn2"/>
+  </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/pantalla2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/pantalla1">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn4"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn4"
+            android:id="@+id/btn5"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn5"
+            android:id="@+id/btn6"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pantalla3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/pantalla2">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/btn7"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn7"
+            android:id="@+id/btn8"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@id/btn8"
+            android:id="@+id/btn9"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_below="@id/pantalla3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#4a148c"
+        android:textColor="#FFFFFF"
+        android:text="Reiniciar"
+        android:id="@+id/btnreinicar"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:layout_below="@id/btnreinicar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30dp"
+        android:gravity="center"
+        android:id="@+id/rol"
+        android:textColor="#000000"/>
+
+
+
+</RelativeLayout>
